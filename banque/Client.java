@@ -16,7 +16,6 @@ public class Client {
             Compte s1=new Compte();
             double c,d;
             int choix=1;
-            System.out.println("solde initial: "+service1.lireSolde(s1)+"dt");
             while(choix!=0){
             System.out.println("si vous voulez lire votre solde tapez 1");
             System.out.println("si vous voulez crediter tapez 2");
@@ -25,7 +24,7 @@ public class Client {
             choix=scanner.nextInt();
             switch(choix){
                 case 1: 
-          System.out.println("solde initial: "+service1.lireSolde(s1)+"dt");
+          System.out.println("votre solde est: "+service1.lireSolde(s1)+"dt");
             break;
                  case 2: 
                     System.out.println("saisir le montant à crediter:");
